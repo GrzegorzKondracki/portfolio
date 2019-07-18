@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9973d20302.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <style></style>
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="burger">
+            <i class="fas fa-bars show"></i>
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="menu">
+            <ul class="nav">
+                <li><a href="#section-1" id="about">About me</a></li>
+                <li><a href="#section-2">Projects</a></li>
+                <li><a href="#section-3">Skills</a></li>
+                <li><a href="#section-4">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="name">
+        <h2 class="h2text"></h2>
+        <span class="cursor">|</span>
+        <div class="scroll-down-arrow">
+            <p>About me</p>
+            <i class="arrow-down fas fa-long-arrow-alt-down"></i>
+        </div>
+    </header>
+
+    <section id="#section-1" class="about main-section">
+        <i class="person fas fa-user"></i>
+        <h1>Hallo, I am Grzegorz Kondracki - Web Developer</h1>
+        <p>I am learning HTML, CSS and JavaScript since January 2019. I have commercical experience with WordPress and I
+            know basics of Git and GitHub. Now I am looking for my first job as web developer. I am interested the
+            most to develop skills in JavaScript and CMS WordPress/PHP.</p>
+        <div>
+            <button>GitHub</button>
+            <button>CV</button>
+        </div>
+    </section>
+
+    <main id="#section-2" class="projects main-section">
+        <h3>Projects (WordPress & Divi): </h3>
+        <section class="wrap-projects">
+            <div class="project">
+                <img src="fika-screen.png" alt="">
+                <h2>Fika Flavour</h2>
+                <p>This website I made using CMS WordPress. I used the Divi theme and one of the templates that I
+                    adapted to the project by adding my own CSS code.</p>
+                <div class="wrap-buttons">
+                    <button onclick="window.open('https://www.fikaflavour.pl/','_blank')">Live</button>
+                </div>
+            </div>
+            <div class="project">
+                <img src="supernova-screen.png" alt="">
+                <h2>Supernowa Media</h2>
+                <p>I built the marketing agency website using CMS WordPress and the Divi theme. I also used fragments of
+                    my own CSS code. I tried to make the site legible and visually attractive.</p>
+                <div class="wrap-buttons">
+                    <button onclick="window.open('https://www.supernovamedia.pl', '_blank')">Live</button>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="wrap-projects">
+            <div class="main-projects">
+                <h2>Fika Flavour</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur voluptas alias a repellat
+                    cumque
+                    id?</p>
+                <div class="wrap-buttons">
+                    <button>Live</button>
+                    <button>Code</button>
+                </div>
+            </div>
+            <div class="main-projects">
+                <h2>Supernova Media</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur voluptas alias a repellat
+                    cumque
+                    id?</p>
+                <div class="wrap-buttons">
+                    <button>Live</button>
+                    <button>Code</button>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <section id="#section-3" class="skills main-section">
+        <h3>Skills</h3>
+        <section class="skills-wrap">
+            <div>
+                <i class="fab fa-html5"></i>
+                <h2>HTML</h2>
+            </div>
+            <div>
+                <i class="fab fa-css3-alt"></i>
+                <h2>CSS</h2>
+            </div>
+            <div>
+                <i class="fab fa-js-square"></i>
+                <h2>JavaScript</h2>
+            </div>
+            <div>
+                <i class="fab fa-wordpress"></i>
+                <h2>WordPress</h2>
+            </div>
+        </section>
+    </section>
+
+    <section id="#section-4" class="form main-section">
+        <div class="contact">
+            <h2>Contact</h2>
+            <div class="phone-wrap">
+                <i class="fas fa-phone"></i>
+                <h3>Phone</h3>
+            </div>
+            <p>+48 665 659 916</p>
+            <div class="mail-wrap">
+                <i class="fas fa-envelope"></i>
+                <h3>E-mail</h3>
+            </div>
+            <p>g.kondracki@outlook.com</p>
+        </div>
+
+        <div class="write">
+            <h2>Write me</h2>
+            <form action="" class="contact-form">
+                <div class="name-email">
+
+                    <input type="text" id="fname" name="firstname" placeholder="Name">
+
+
+                    <input type="text" id="email" email="email" placeholder="Email">
+                </div>
+
+                <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Message"></textarea>
+
+                <input type="submit" value="Send" class="send-button">
+            </form>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
