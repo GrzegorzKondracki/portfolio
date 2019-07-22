@@ -26,9 +26,9 @@
         <div class="menu">
             <ul class="nav">
                 <li><a href="#section-1" id="about">About me</a></li>
-                <li><a href="#section-2">Projects</a></li>
-                <li><a href="#section-3">Skills</a></li>
-                <li><a href="#section-4">Contact</a></li>
+                <li><a href="#section-2" id="projects">Projects</a></li>
+                <li><a href="#section-3" id="skills">Skills</a></li>
+                <li><a href="#section-4" id="form">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -42,7 +42,7 @@
         </div>
     </header>
 
-    <section id="#section-1" class="about main-section">
+    <section id="about" class="about main-section">
         <i class="person fas fa-user"></i>
         <h1>Hallo, I am Grzegorz Kondracki - Web Developer</h1>
         <p>I am learning HTML, CSS and JavaScript since January 2019. I have commercical experience with WordPress and I
@@ -54,7 +54,10 @@
         </div>
     </section>
 
-    <main id="#section-2" class="projects main-section">
+    <main id="projects" class="projects main-section">
+        <br>
+        <br>
+        <br>
         <h3>Projects (WordPress & Divi): </h3>
         <section class="wrap-projects">
             <div class="project">
@@ -100,7 +103,10 @@
         </section> -->
     </main>
 
-    <section id="#section-3" class="skills main-section">
+    <section id="skills" class="skills main-section">
+        <br>
+        <br>
+        <br>
         <h3>Skills:</h3>
         <section class="skills-wrap">
             <div>
@@ -130,7 +136,7 @@
         </section>
     </section>
 
-    <section id="#section-4" class="form main-section">
+    <section id="form" class="form main-section">
         <div class="contact">
             <h2>Contact</h2>
             <div class="phone-wrap">
@@ -165,6 +171,34 @@
 
 
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    </script>
+    <script>
+        $('#about').on('click', function () {
+            $('body, html').animate({
+                scrollTop: $('.about').offset().top
+            }, 500)
+        })
+
+        $('#projects').on('click', function () {
+            $('body, html').animate({
+                scrollTop: $('.projects').offset().top
+            }, 500)
+        })
+
+        $('#skills').on('click', function () {
+            $('body, html').animate({
+                scrollTop: $('.skills').offset().top
+            }, 500)
+        })
+
+        $('#form').on('click', function () {
+            $('body, html').animate({
+                scrollTop: $('.form').offset().top
+            }, 500)
+        })
+
+    </script>
 </body>
 
 </html>

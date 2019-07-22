@@ -32,13 +32,3 @@ const cursorAnimation = () => {
 
 const indexTyping = setInterval(addLetter, time);
 setInterval(cursorAnimation, 400);
-
-
-
-// Scrolling to section
-
-
-document.querySelector("#about").addEventListener('click', () => window.scrollTo({
-    top: 850,
-    behavior: 'smooth',
-}));
