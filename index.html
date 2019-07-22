@@ -50,7 +50,7 @@
             most to develop skills in JavaScript and CMS WordPress/PHP.</p>
         <div>
             <button onclick="window.open('https://github.com/GrzegorzKondracki','_blank')">GitHub</button>
-            <button onclick="window.open('https://www.linkedin.com/in/grzegorz-kondracki/','_blank')">LinkedIn</button>
+            <button onclick="window.open('https://www.linkedin.com/in/grzegorzkondracki','_blank')">LinkedIn</button>
         </div>
     </section>
 
@@ -175,6 +175,12 @@
     </script>
     <script>
         $('#about').on('click', function () {
+            $('body, html').animate({
+                scrollTop: $('.about').offset().top
+            }, 500)
+        })
+
+        $('.scroll-down-arrow').on('click', function () {
             $('body, html').animate({
                 scrollTop: $('.about').offset().top
             }, 500)
