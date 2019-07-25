@@ -14,6 +14,7 @@ body {
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
+
 }
 
 .burger i {
@@ -57,7 +58,7 @@ body {
     position: fixed;
     left: -2500px;
     right: 0;
-    width: 100vw;
+    width: 100%;
     display: flex;
     list-style: none;
     padding: 10px;
@@ -258,6 +259,12 @@ body {
     margin: 20px;
 }
 
+@media (max-width: 800px) {
+    #projects h3 {
+        font-size: 20px;
+    }
+}
+
 .wrap-projects {
     display: flex;
     margin: 60px auto 20px auto;
@@ -330,10 +337,21 @@ body {
     justify-content: center;
 }
 
+@media (max-width: 800px) {
+
+    .wrap-projects h2,
+    .wrap-projects p {
+        width: 100%;
+    }
+
+    .wrap-projects img {
+        width: 49vw;
+        height: auto;
+    }
+}
 
 .skills {
     margin: 20px 20px 50px;
-    height: 50vh;
 }
 
 .skills-wrap {
@@ -368,6 +386,14 @@ body {
 
     .skills-wrap {
         flex-wrap: wrap;
+    }
+
+    .skills h3 {
+        font-size: 20px;
+    }
+
+    #skills {
+        min-height: 100vh;
     }
 }
 
@@ -461,4 +487,24 @@ div.mail-wrap {
 .send-button {
     width: 20%;
     transition: .2s;
+}
+
+@media (max-width: 800px) {
+    #form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.contact {
+        align-self: center;
+    }
+
+    .write {
+        padding: 10px;
+        margin: 50px 0;
+    }
+
+    .write h2 {
+        padding: 10px;
+    }
 }
