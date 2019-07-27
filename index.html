@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext"
         rel="stylesheet">
     <style></style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -34,8 +35,11 @@
     </nav>
 
     <header class="name">
-        <h2 class="h2text"></h2>
-        <span class="cursor">|</span>
+        <h1>WEB DEVELOPER</h1>
+        <div class="name-and-cursor">
+            <h2 class="h2text"></h2>
+            <span class="cursor">|</span>
+        </div>
         <div class="scroll-down-arrow">
             <p>About me</p>
             <i class="arrow-down fas fa-long-arrow-alt-down"></i>
@@ -43,15 +47,21 @@
     </header>
 
     <section id="about" class="about main-section">
-        <i class="person fas fa-user"></i>
-        <h1>Hallo, I am Grzegorz Kondracki - Web Developer</h1>
-        <p>I am learning HTML, CSS and JavaScript. I have commercical experience with WordPress and I
-            know basics of Git and GitHub. Now I am looking for my first job as web developer. I am interested the
-            most to develop skills in JavaScript, PHP and CMS WordPress.</p>
-        <div>
-            <button onclick="window.open('https://github.com/GrzegorzKondracki','_blank')"
-                class="github">GitHub</button>
-            <button onclick="window.open('https://www.linkedin.com/in/grzegorzkondracki','_blank')">LinkedIn</button>
+        <!-- <i class="person fas fa-user"></i> -->
+        <div class="img-face" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <img src="face.png" alt="">
+        </div>
+        <div class="hallo">
+            <h1>Hallo, I am Grzegorz Kondracki - Web Developer</h1>
+            <p>I am learning HTML, CSS and JavaScript. I have commercical experience with WordPress and I
+                know basics of Git and GitHub. Now I am looking for my first job as web developer. I am interested the
+                most to develop skills in JavaScript, PHP and CMS WordPress.</p>
+            <div class="btn">
+                <button onclick="window.open('https://github.com/GrzegorzKondracki','_blank')"
+                    class="github">GitHub</button>
+                <button
+                    onclick="window.open('https://www.linkedin.com/in/grzegorzkondracki','_blank')">LinkedIn</button>
+            </div>
         </div>
     </section>
 
@@ -205,6 +215,10 @@
             }, 500)
         })
 
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

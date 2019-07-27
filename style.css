@@ -30,7 +30,7 @@ body {
     height: 38px;
     background-color: #1f3c88;
     text-align: center;
-    z-index: 1;
+    z-index: 2;
 }
 
 .fa-times {
@@ -93,15 +93,14 @@ body {
 
 .nav.show {
     left: 0;
+    z-index: 1;
 }
 
 .nav li {
     transition: .3s;
 }
 
-.nav li:hover {
-    transform: scale(1.3);
-}
+
 
 .nav li a {
     text-decoration: none;
@@ -110,13 +109,33 @@ body {
     margin: 0 30px;
 }
 
+.nav li a:hover {
+    color: #dd6b4d;
+}
+
+.nav li:hover {
+    transform: scale(1.3);
+}
+
 .name {
     background-color: #1f3c88;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 90vh;
     margin: 62px 20px 0 20px;
+}
+
+.name h1 {
+    color: #dd6b4d;
+    font-size: 80px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.name-and-cursor {
+    display: flex;
 }
 
 .name h2 {
@@ -181,10 +200,14 @@ body {
 }
 
 
-.person {
+/* .person {
     transform: scale(7);
     margin-top: 15vh;
-    /* color: #29A9DF; */
+} */
+
+.about img {
+    border-radius: 100%;
+    margin-top: 40px;
 }
 
 .about {
@@ -192,15 +215,15 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .about h1 {
     margin-top: 10vh;
     width: 80%;
     padding: 2%;
-    text-align: center;
-    font-size: 36px;
+    font-size: 32px;
+    margin: auto;
 }
 
 .about p {
@@ -208,6 +231,14 @@ body {
     padding: 2%;
     text-align: center;
     font-size: 18px;
+    margin: auto;
+
+}
+
+.btn {
+    display: block;
+    margin: auto;
+
 }
 
 @media (max-width: 800px) {
@@ -229,9 +260,7 @@ body {
 }
 
 .about div {
-    display: flex;
-    width: 80%;
-    justify-content: center;
+    text-align: center;
 }
 
 .about button {
@@ -248,7 +277,7 @@ body {
 
 }
 
-
+.hallo {}
 
 
 @media (max-width: 800px) {
@@ -280,14 +309,13 @@ body {
 
 .wrap-projects {
     display: flex;
-    margin: 60px auto 20px auto;
+    /* margin: 60px auto 20px auto; */
     justify-content: center;
 }
 
 .project {
     flex-basis: 60vh;
     text-align: center;
-    /* border: 2px solid black; */
     border-radius: 30px;
     margin: 20px;
     padding: 20px;
@@ -458,7 +486,7 @@ div.mail-wrap {
 
 .write {
     flex-basis: 70%;
-    background-color: #5893d4;
+    background-color: #dd6b4d;
     border-radius: 30px 0 30px 0;
     padding: 50px;
 }

@@ -15,7 +15,7 @@ burger.addEventListener("click", function () {
 // Letters
 const h2Text = document.querySelector('.h2text');
 const spanCursor = document.querySelector('.cursor');
-const text = 'Grzegorz Kondarcki, Web Developer.';
+const text = 'Grzegorz Kondarcki';
 
 let indexText = 0;
 const time = 80;
