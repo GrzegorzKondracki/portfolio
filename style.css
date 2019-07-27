@@ -208,6 +208,7 @@ body {
 .about img {
     border-radius: 100%;
     margin-top: 40px;
+    box-shadow: 0 0 10px 3px gray;
 }
 
 .about {
@@ -309,7 +310,6 @@ body {
 
 .wrap-projects {
     display: flex;
-    /* margin: 60px auto 20px auto; */
     justify-content: center;
 }
 
