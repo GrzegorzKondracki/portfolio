@@ -80,6 +80,7 @@ body {
     .nav li {
         padding-bottom: 25px;
     }
+
 }
 
 .burger .fas {
@@ -129,7 +130,7 @@ body {
 
 .name h1 {
     color: #dd6b4d;
-    font-size: 80px;
+    font-size: 70px;
     margin-bottom: 5%;
     text-align: center;
 }
@@ -157,12 +158,21 @@ body {
 }
 
 @media (max-width: 800px) {
+
+    .name h1 {
+        font-size: 40px;
+    }
+
     .name h2 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     body.show {
         position: fixed;
+    }
+
+    .cursor {
+        font-size: 24px;
     }
 }
 
@@ -199,11 +209,6 @@ body {
     padding: 3px;
 }
 
-
-/* .person {
-    transform: scale(7);
-    margin-top: 15vh;
-} */
 
 .about img {
     border-radius: 100%;
@@ -250,13 +255,16 @@ body {
     .about h1 {
         font-size: 20px;
         width: 90%;
-        margin: 12vh 0 4vh 0;
     }
 
     .about p {
         font-size: 14px;
         width: 90%;
+    }
 
+    .about img {
+        transform: scale(.75);
+        margin-top: 100px;
     }
 }
 
@@ -351,6 +359,12 @@ body {
     #projects h3 {
         font-size: 20px;
     }
+
+    /* #button {
+        display: none;
+    } */
+
+
 }
 
 .wrap-projects {
@@ -378,6 +392,10 @@ body {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
+    }
+
+    .projects {
+        margin-top: 100px;
     }
 }
 
@@ -434,6 +452,10 @@ body {
     .wrap-projects img {
         width: 49vw;
         height: auto;
+    }
+
+    .projects h3 {
+        width: 280px;
     }
 }
 
@@ -594,5 +616,14 @@ div.mail-wrap {
 
     .write h2 {
         padding: 10px;
+    }
+
+    .write input,
+    .write textarea {
+        width: 90%;
+    }
+
+    .send-button:hover {
+        width: 90%;
     }
 }
