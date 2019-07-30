@@ -68,7 +68,6 @@ body {
 
 @media (max-width: 800px) {
     .nav {
-        /* display: block; */
         height: 100vh;
         left: -800px;
         text-align: center;
@@ -168,7 +167,7 @@ body {
     }
 
     body.show {
-        position: fixed;
+        /* position: fixed; */
     }
 
     .cursor {

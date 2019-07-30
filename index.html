@@ -196,6 +196,10 @@
             $('body, html').animate({
                 scrollTop: $('.about').offset().top
             }, 500)
+
+            if ($(window).width() < 801) {
+                $('nav ul, .burger, div i, .nav body').toggleClass("show")
+            }
         })
 
         $('.scroll-down-arrow').on('click', function () {
@@ -208,18 +212,30 @@
             $('body, html').animate({
                 scrollTop: $('.projects').offset().top
             }, 500)
+
+            if ($(window).width() < 801) {
+                $('nav ul, .burger, div i, .nav body').toggleClass("show")
+            }
         })
 
         $('#skills').on('click', function () {
             $('body, html').animate({
                 scrollTop: $('.skills').offset().top
             }, 500)
+
+            if ($(window).width() < 801) {
+                $('nav ul, .burger, div i, .nav body').toggleClass("show")
+            }
         })
 
         $('#form').on('click', function () {
             $('body, html').animate({
                 scrollTop: $('.form').offset().top
             }, 500)
+
+            if ($(window).width() < 801) {
+                $('nav ul, .burger, div i, .nav body').toggleClass("show")
+            }
         })
 
 
