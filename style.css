@@ -424,6 +424,7 @@ body {
 .projects button:hover {
     background-color: #1f3c88;
     color: #ceddef;
+    cursor: pointer;
 }
 
 .wrap-projects h2,
