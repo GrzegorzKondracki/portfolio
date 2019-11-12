@@ -6,7 +6,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144987953-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-144987953-1');
@@ -65,9 +68,8 @@
         </div>
         <div class="hallo">
             <h1>Hallo, I am Grzegorz Kondracki - Web Developer</h1>
-            <p>I am learning HTML, CSS and JavaScript. I have commercical experience with WordPress and I
-                know basics of Git and GitHub. Now I am looking for my first job as web developer. I am interested the
-                most to develop skills in JavaScript, PHP and CMS WordPress.</p>
+            <p>I know HTML, CSS and basics of JavaScript/jQuery, Git and GitHub. I have commercical experience with
+                WordPress. I am constantly developing my skills.</p>
             <div class="btn">
                 <button onclick="window.open('https://github.com/GrzegorzKondracki','_blank')"
                     class="github">GitHub</button>
@@ -108,6 +110,29 @@
                         onclick="window.open('https://grzegorzkondracki.github.io/PasswordGenerator', '_blank')">Live</button>
                     <button class="github"
                         onclick="window.open('https://github.com/GrzegorzKondracki/PasswordGenerator', '_blank')">GitHub</button>
+                </div>
+            </div>
+            <div class="project">
+                <img src="fiber-screen.png" alt="">
+                <h2>Fiber</h2>
+                <p>A simple landing page with contact info made with pure HTML and CSS. Project created for <a
+                        href="https://akanza.pl/">Akanza.pl</a>
+                </p>
+                <div class="wrap-buttons">
+                    <button onclick="window.open('https://grzegorzkondracki.github.io/fiber/', '_blank')">Live</button>
+                    <button class="github"
+                        onclick="window.open('https://github.com/GrzegorzKondracki/fiber', '_blank')">GitHub</button>
+                </div>
+            </div>
+            <div class="project">
+                <img src="tokeo-screen.png" alt="">
+                <h2>Tokeo</h2>
+                <p>Landing page created using HTML, CSS and JS/jQuery. Project created for <a
+                        href="https://akanza.pl/">Akanza.pl</a></p>
+                <div class="wrap-buttons">
+                    <button onclick="window.open('https://grzegorzkondracki.github.io/tokeo/', '_blank')">Live</button>
+                    <button class="github"
+                        onclick="window.open('https://github.com/GrzegorzKondracki/tokeo', '_blank')">GitHub</button>
                 </div>
             </div>
         </section>
@@ -265,10 +290,10 @@
 
         btn.on('click', function (e) {
             e.preventDefault();
-            $('html, body').animate({ scrollTop: 0 }, '300');
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
         });
-
-
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
